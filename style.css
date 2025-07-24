@@ -79,7 +79,7 @@ nav {
 .banner-title-text > h1 {
   color: #000;
   font-family: "Noto Serif";
-  font-size: clamp(2.5rem, 1rem + 4vw, 4.0625rem);
+  font-size: clamp(1rem, 0.8rem + 4vw, 3.125rem);
   font-weight: 700;
 }
 
@@ -91,7 +91,7 @@ nav {
 .banner-subtitle-text {
   color: rgba(0, 0, 0, 0.5);
   font-family: Inter;
-  font-size: clamp(0.2rem, 0.4rem + 4vw, 1.3rem);
+  font-size: clamp(0.3rem, 0.2rem + 4vw, 1.3rem);
   font-weight: 400;
 }
 
@@ -116,7 +116,7 @@ main {
 .ourPlantsTitleText > h1 {
   color: #000;
   font-family: "Noto Serif";
-  font-size: clamp(2.5rem, 1rem + 4vw, 3.125rem);
+  font-size: clamp(1rem, 0.8rem + 4vw, 3.125rem);
   font-weight: 700;
 }
 
@@ -124,15 +124,15 @@ main {
   margin: 1rem auto 3rem auto;
   color: rgba(0, 0, 0, 0.5);
   font-family: Inter;
-  font-size: clamp(0.2rem, 0.4rem + 4vw, 1.3rem);
+  font-size: clamp(0.3rem, 0.2rem + 4vw, 1.3rem);
   font-weight: 400;
 }
 
 /* ourPlantsCardContainer */
-.ourPlantsCardContainer{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    gap: 1.25rem;
+.ourPlantsCardContainer {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 1.25rem;
 }
 
 .card {
@@ -142,7 +142,6 @@ main {
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   border-radius: 5px;
   cursor: pointer;
-  
 }
 
 .card:hover {
@@ -208,8 +207,173 @@ main {
   line-height: normal;
 }
 
-/* small device */
+/* trustedContainer */
+.trustedContainer {
+  display: flex;
+  /* gap: 3.75rem; */
+  justify-content: space-between;
+  align-items: center;
+}
 
+/* trustedMainImg */
+.trustedMainImg {
+  max-width: 100%;
+}
+
+.trustedMainImg > img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* trustedStampImg */
+.trustedImages {
+  position: relative;
+  display: inline-block;
+}
+.trustedStampImg > img {
+  position: absolute;
+  display: block;
+  max-width: 100%;
+  width: 55%;
+  height: auto;
+  top: -22%;
+  right: -22%;
+  filter: drop-shadow(-4px 10px 4px rgba(0, 0, 0, 0.493));
+}
+
+/* trustedTexts */
+.trustedTexts {
+  max-width: 45%;
+}
+
+/* trustedTextTitle */
+.trustedTextTitle > h1 {
+  color: #000;
+  font-family: "Noto Serif";
+  font-size: clamp(1rem, 0.8rem + 4vw, 3.125rem);
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  /* width: 100%; */
+  margin-bottom: 1rem;
+}
+
+/* trustedTextSubTitleList */
+
+.trustedTextSubTitleList > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: center;
+  padding-left: 2rem;
+}
+.trustedTextSubTitleList > ul > li {
+  font-size: clamp(0.3rem, 0.2rem + 4vw, 1.3rem);
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Inter;
+  font-weight: 400;
+  /* text-align: center; */
+}
+
+/* latestDealsSection */
+.latestDealsSection {
+  margin: 8rem auto;
+}
+
+/* .latest deals image container */
+
+.img1 {
+  grid-area: img1;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("assets/deal-bloom.png") lightgray 0px -78.437px / 115.538% 137.075% no-repeat;
+  height: 13.5rem;
+  width: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.img2 {
+  grid-area: img2;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("assets/deal-ana.png") lightgray 0px -78.437px / 115.538% 137.075% no-repeat;
+  height: 13.5rem;
+  width: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.img3 {
+  grid-area: img3;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("assets/deal-zabo.png") lightgray 0px -78.437px / 115.538% 137.075% no-repeat;
+  height: 28rem;
+  width: auto;
+  display: block;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.latestDealsImgContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "img1 img3 img3 img3"
+    "img2 img3 img3 img3";
+  align-items: center;
+}
+
+/* imgContent */
+
+.imgContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  gap: 0.8rem;
+  color: #fff;
+  font-family: "Noto Serif";
+  font-weight: 700;
+}
+.imgContentSame > h1 {
+  font-size: 1.25rem;
+}
+.imgContentSame > p {
+  font-size: 1rem;
+}
+
+.imgContentSameBig> h1{
+    font-size: clamp(1.25rem, 0.4rem + 4vw, 2.5rem);
+}
+.imgContentSameBig> p{
+    font-size: clamp(1rem, 0.2rem + 4vw, 1.6rem);
+}
+
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------- */
+
+/* small device */
 @media screen and (max-width: 576px) {
   /* body here */
   body {
@@ -262,9 +426,47 @@ main {
   }
 
   /* ourPlantsCardContainer */
-.ourPlantsCardContainer{
+  .ourPlantsCardContainer {
     transform: scale(1);
     grid-template-columns: repeat(2, auto);
     gap: 1rem;
-}
+  }
+
+  /* trustedContainer */
+  .trustedContainer {
+    display: flex;
+    gap: 3.75rem;
+    flex-direction: column;
+  }
+
+  /* trustedStampImg */
+  /* .trustedImages {
+    position: relative;
+    display: inline-block;
+  } */
+  .trustedStampImg > img {
+    display: none;
+  }
+
+  /* trustedTexts */
+  .trustedTexts {
+    max-width: 100%;
+  }
+
+  /* .latestDealsImgContainer */
+
+  .latestDealsImgContainer {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-areas:
+      "img1 img1 img1 img1"
+      "img2 img2 img2 img2"
+      "img3 img3 img3 img3";
+  }
+
+  /* .img3 */
+
+  .img3{
+    height: 13.5rem;
+  }
 }
