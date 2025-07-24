@@ -371,7 +371,7 @@ main {
 
 /* emailContainer */
 .emailContainer {
-  background: url("assets/news-letter-bg.png");
+  background: url("assets/./news-letter-bg.png");
   height: 28rem;
   width: 100%;
   background-size: cover;
@@ -550,6 +550,8 @@ main {
 
   .emailContainer {
   height: 14rem;
+  /* width: 80%; */
+  /* margin: 0 auto; */
 }
 .emailContainer {
   
