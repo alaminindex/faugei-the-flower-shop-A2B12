@@ -513,6 +513,10 @@ main {
     padding: 1%;
   }
 
+  .ourPlantsSection {
+  margin: 3rem auto 3rem auto;
+}
+
   /* header here */
   header {
     width: 100%;
@@ -587,6 +591,9 @@ main {
 
   /* .latestDealsImgContainer */
 
+  .latestDealsSection {
+    margin: 3rem auto;
+  }
   .latestDealsImgContainer {
     display: grid;
     gap: 0.5rem;
